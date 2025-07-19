@@ -1,0 +1,84 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Calculator Styles */
+.calculator {
+    width: 100%;
+    max-width: 320px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+.display input {
+    width: 100%;
+    padding: 15px;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #333;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:active {
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.operator {
+    background-color: #ff9f0a;
+    color: white;
+}
+
+.equal {
+    grid-column: span 2;
+    background-color: #34c759;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 360px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .display input {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}

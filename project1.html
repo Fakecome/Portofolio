@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Gunting, Batu, Kertas</h1>
+        <div class="game-area">
+            <div class="player-side">
+                <h2>Pilihan mu</h2>
+                <span id="player-choice" class="choice-display"></span>
+            </div>
+            <div class="computer-side">
+                <h2>Computer memilih</h2>
+                <span id="computer-choice" class="choice-display"></span>
+            </div>
+        </div>
+        <div class="result-display">
+            <h2>Result: <span id="result"></span></h2>
+        </div>
+        <div class="buttons">
+            <button class="choice-btn" id="rock">Batu</button>
+            <button class="choice-btn" id="paper">Kertas</button>
+            <button class="choice-btn" id="scissors">Gunting</button>
+        </div>
+        <div class="score-board">
+            <h3>Player: <span id="player-score">0</span> | Computer: <span id="computer-score">0</span></h3>
+        </div>
+    </div>
+    <script src="project1.js"></script>
+</body>
+</html>

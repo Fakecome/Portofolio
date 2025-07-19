@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handoyo Personal Website</title>
+    <link rel="stylesheet" href="portofolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#home">Porto<span>folio</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="btn-download">Download Cv</a>
+        <div class="hamburger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+
+    <main class="utama">
+        <section class="hero-section" id="home">
+            <div class="hero-text">
+                <h1 class="scroll-fade-in">Hi, I'm <span>Handoyo</span></h1>
+                <h2 class="scroll-fade-in" style="--delay: 0.1s;">Frontend Developer</h2>
+                <p class="scroll-fade-in" style="--delay: 0.2s;">
+                    Frontend merupakan salah satu bagian dari website yang 
+                    menampilkan tampilan untuk para pengguna. Pada bagian 
+                    ini dibuat dengan menggunakan 3 bahasa pemrograman 
+                    web yaitu HyperText Markup Language (HTML), Cascading 
+                    Style Sheets (CSS), dan JavaScript.
+                </p>
+                <div class="hero-buttons scroll-fade-in" style="--delay: 0.3s;">
+                    <a href="#contact" class="btn-hire">Contact Me</a>
+                    <a href="#project" class="btn-view">View Project</a>
+                </div>
+                <div class="social-links scroll-fade-in" style="--delay: 0.4s;">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://instagram.com/fakecomew"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://github.com/Fakecome"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.tiktok.com/@fakecomee"><i class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+            <div class="hero-image scroll-fade-in" style="--delay: 0.2s;">
+                <div class="image-bg-circle">
+                    <img src="img/gojo2.jpg" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="about-me" id="about">
+        <div class="about-container">
+            <div class="about-image scroll-fade-in">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/gojo5.jpg">
+                    <img src="img/gojo4.jpg" alt="Profile Picture" id="about-img">
+                </picture>
+            </div>
+            <div class="about-info">
+                <div class="about-description">
+                    <div class="info-box scroll-fade-in" style="--delay: 0.1s;">
+                        <h3><i class='bx bxs-user'></i>Who Am I</h3>
+                        <p>Hello everyone! My name is Handoyo, I'm a web developer from Palembang, Indonesia. I have experience in HTML, CSS, and Javascript</p>
+                    </div>
+                    <div class="info-box scroll-fade-in" style="--delay: 0.2s;">
+                        <h3><i class='bx bxs-paper-plane'></i>My Approach</h3>
+                        <p>I focus on user-centered design, performance, and accessibility, always evolving with modern tech to deliver seamless digital experiences.</p>
+                    </div>
+                </div>
+
+                <h3 class="personal-info-title scroll-fade-in" style="--delay: 0.3s;"><i class='bx bxs-info-circle'></i>Personal Info</h3>
+                <div class="personal-info-grid">
+                    <div class="info-item scroll-fade-in" style="--delay: 0.4s;">
+                        <i class='bx bxs-id-card'></i>
+                        <span><strong>Name:</strong> Handoyo</span>
+                    </div>
+                    <div class="info-item scroll-fade-in" style="--delay: 0.5s;">
+                        <i class='bx bxs-calendar'></i>
+                        <span><strong>Date of Birth:</strong> 3 May, 2010</span>
+                    </div>
+                    <div class="info-item scroll-fade-in" style="--delay: 0.6s;">
+                        <i class='bx bxs-map'></i>
+                        <span><strong>Place of Birth:</strong> Palembang, Indonesia</span>
+                    </div>
+                    <div class="info-item scroll-fade-in" style="--delay: 0.7s;">
+                        <i class='bx bxs-envelope'></i>
+                        <span><strong>Email:</strong> @gmail.com</span>
+                    </div>
+                    <div class="info-item scroll-fade-in" style="--delay: 0.8s;">
+                        <i class='bx bxs-phone'></i>
+                        <span><strong>Phone:</strong> +62</span>
+                    </div>
+                    <div class="info-item scroll-fade-in" style="--delay: 0.9s;">
+                        <i class='bx bxs-graduation'></i>
+                        <span><strong>School:</strong> Ignatius Global School</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section" id="project">
+        <h2 class="section-title scroll-fade-in">My Latest Projects</h2>
+        <div class="project-grid">
+            
+            <!-- Project Card 1 -->
+            <div class="project-card scroll-fade-in" style="--delay: 0.1s;">
+                <a href="project1.html" target="_blank" class="card-main-link"></a>
+                <div class="project-image">
+                    <img src="img/rock-paper-scissor2.jpg" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Rock Paper Scissors</h3>
+                    <p class="project-description">Game gunting batu kertas sederhana melawan komputer. Pemain memilih salah satu opsi untuk melawan komputer </p>
+                    <ul class="project-tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Fakecome"><i class='bx bxl-github'></i></a>
+                        <a href="project1.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card scroll-fade-in" style="--delay: 0.2s;">
+                <a href="project2.html" target="_blank" class="card-main-link"></a>
+                <div class="project-image">
+                    <img src="img/to-do-list.jpg" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">To-Do List</h3>
+                    <p class="project-description">Web sederhana untuk mencatat daftar tugas. Pengguna dapat mencoret tugas yang sudah selesai atau menghapusnya</p>
+                     <ul class="project-tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Fakecome"><i class='bx bxl-github'></i></a>
+                        <a href="project2.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card scroll-fade-in" style="--delay: 0.3s;">
+                <a href="project3.html" target="_blank" class="card-main-link"></a>
+                <div class="project-image">
+                    <img src="img/calculator.jpg" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Calculator</h3>
+                    <p class="project-description">Web kalkulator sederhana. Pengguna dapat melakukan pertambahan, pengurangan, perkalian, dan pembagian</p>
+                     <ul class="project-tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Fakecome"><i class='bx bxl-github'></i></a>
+                        <a href="project3.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2 class="section-title scroll-fade-in">Contact</h2>
+        <div class="contact-container">
+            <form class="contact-form scroll-fade-in" style="--delay: 0.2s;">
+                <div class="form-group-icon">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group-icon">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group-icon">
+                    <i class='bx bxs-pencil'></i>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message <i class='bx bxs-paper-plane'></i></button>
+            </form>
+            <div class="contact-info scroll-fade-in" style="--delay: 0.3s;">
+                <h3>Contact Information</h3>
+                <p><i class='bx bxs-map'></i> Palembang, Indonesia</p>
+                <p><i class='bx bxs-envelope'></i> @gmail.com</p>
+                <p><i class='bx bxs-phone'></i> +62 000 000 0000</p>
+                <p><i class='bx bxl-github'></i> Fakecome</p>
+                <p><i class='bx bxl-instagram-alt'></i> fakecomew</p>
+                <p><i class='bx bxl-tiktok'></i> fakecomee</p>
+                <div class="contact-social-links">
+                    <a href="https://github.com/Fakecome" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.tiktok.com/@fakecomee" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://instagram.com/fakecomew" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#" target="_blank"><i class='bx bxl-line'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#home" class="scroll-to-top"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p>This feature is not ready for now.</p>
+        </div>
+    </div>
+
+    <script src="portofolio.js"></script>
+</body>
+</html>
