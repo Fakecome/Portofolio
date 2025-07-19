@@ -806,10 +806,6 @@ body {
     }
 
 
-    /* Hide the "Contact" item in the navbar as well */
-    .nav-links li:last-of-type {
-        display: none;
-    }
 }
 
 @media (max-width: 480px) {
