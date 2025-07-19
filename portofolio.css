@@ -549,20 +549,17 @@ body {
 }
 
 .contact-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     margin-top: 50px;
     text-align: left;
 }
 
 .contact-form, .contact-info {
-    background: #0a192f;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #003a5c;
+    background: transparent;
+    padding: 0;
+    border: none;
     box-shadow: none;
-    transition: all 0.3s ease;
     height: 100%;
 }
 
@@ -575,7 +572,7 @@ body {
 }
 
 .contact-form:hover, .contact-info:hover {
-    transform: translateY(-5px);
+    transform: none;
     box-shadow: none;
 }
 
@@ -740,15 +737,11 @@ body {
     }
 
     .about-me .about-image {
-        max-width: 300px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
+        max-width: 350px;
     }
 
     .contact-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 30px;
     }
 
@@ -797,10 +790,10 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 300px;
+        height: 400px;
     }
     .about-me .about-image img {
-        width: 150%;
+        width: 180%;
         height: auto;
         object-position: center;
         border-radius: 0;
@@ -810,6 +803,12 @@ body {
     .personal-info-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+
+
+    /* Hide the "Contact" item in the navbar as well */
+    .nav-links li:last-of-type {
+        display: none;
     }
 }
 
@@ -831,3 +830,4 @@ body {
         padding: 20px;
     }
 }
+
