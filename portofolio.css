@@ -538,7 +538,25 @@ body {
 
 .close-btn:hover,
 .close-btn:focus {
-    color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Typing Animation */
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em; /* Match font size */
+    background-color: orange;
+    margin-left: 4px;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { background-color: transparent }
+    50% { background-color: orange; }
 }
 
 /* Contact Section */
@@ -806,6 +824,7 @@ body {
     }
 
 
+
 }
 
 @media (max-width: 480px) {
@@ -826,4 +845,3 @@ body {
         padding: 20px;
     }
 }
-
