@@ -74,4 +74,27 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const typingTextElement = document.getElementById('typing-text');
+    const textToType = "Handoyo";
+    let index = 0;
+
+    // Add a cursor element
+    const cursor = document.createElement('span');
+    cursor.classList.add('typing-cursor');
+    typingTextElement.parentNode.insertBefore(cursor, typingTextElement.nextSibling);
+
+    function type() {
+        if (index < textToType.length) {
+            typingTextElement.textContent += textToType.charAt(index);
+            index++;
+            setTimeout(type, 500); // Typing speed
+        } else {
+            cursor.style.display = 'none';
+        }
+    }
+
+    type();
 }); 
